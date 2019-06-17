@@ -3,6 +3,7 @@ cask 'AdoptOpenJDK8'
 brew 'zsh'
 brew 'diff-so-fancy'
 brew 'hub'
+brew 'jenv'
 brew 'maven'
 brew 'yarn', args: ['ignore-dependencies']
 brew 'zsh-autosuggestions'
