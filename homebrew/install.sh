@@ -16,7 +16,7 @@ then
 		echo "  Installing Homebrew for you."
 
 		# place everything in ~/.homebrew
-		mkdir $BREW_HOME/.homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $BREW_HOME/.homebrew
+		mkdir $BREW_HOME && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C $BREW_HOME
 	fi
 
 fi

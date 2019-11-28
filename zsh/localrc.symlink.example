@@ -4,8 +4,14 @@
 # Configure Git Trainer Mode (see dotfiles/functions/prompt_pure_setup)
 #export PURE_GIT_PULL=0
 
-# Where Homebrew should be installed to
+# Location for homebrew
 export BREW_HOME="$HOME"
 
 # Where nvm is installed to
 export NVM_HOME="$HOME"
+
+# Configure screenshot folder (see dotfiles/macos/settings.sh)
+export DOT_screenshot_dir="$HOME/Pictures/screenshots"
+
+# Projects
+export $PROJECT_HOME=$HOME/my/folder

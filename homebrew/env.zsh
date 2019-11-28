@@ -1,1 +1,1 @@
-export PATH=$BREW_HOME/.homebrew/bin:$BREW_HOME/.homebrew/sbin:$PATH
+export PATH=$BREW_HOME/bin:$BREW_HOME/sbin:$PATH

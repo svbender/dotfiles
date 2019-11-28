@@ -1,6 +1,11 @@
+tap 'AdoptOpenJDK/openjdk'
+cask 'AdoptOpenJDK8'
+brew 'zsh'
 brew 'diff-so-fancy'
 brew 'hub'
 brew 'maven'
 brew 'yarn', args: ['ignore-dependencies']
 brew 'zsh-autosuggestions'
-cask 'java'
+brew 'zsh-completions'
+tap git-chglog/git-chglog
+brew git-chglog

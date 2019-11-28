@@ -1,5 +1,7 @@
 alias m='meta --exclude ${PWD##*/} $1'
 alias x='meta --exclude ${PWD##*/} exec $1'
+alias p="cd $PROJECT_HOME"
+alias ws="webstorm"
 
 function killportprocess() {
     lsof -i tcp:$1 | awk 'NR!=1 {print $2}' | xargs kill
