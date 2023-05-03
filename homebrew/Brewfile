@@ -1,0 +1,7 @@
+brew 'zsh'
+brew 'gh'
+brew 'diff-so-fancy'
+brew 'jenv'
+brew 'maven'
+brew 'nvm'
+cask 'chromedriver'
