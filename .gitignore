@@ -1,4 +1,5 @@
 git/gitconfig.local.symlink
+zsh/localrc.symlink
 
 # Editors
 .vscode/

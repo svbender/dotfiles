@@ -1,9 +1,7 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-fpath=($ZSH/functions $fpath)
-
-autoload -U $ZSH/functions/*(:t)
+autoload -U $DOTFILES/functions/*(:t)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -37,3 +35,27 @@ bindkey '^[[5D' beginning-of-line
 bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
+
+# load .localrc (contains environment variables to use)
+source $HOME/.localrc
+
+# dotfiles includes
+# Git
+source $DOTFILES/git/aliases.zsh
+
+# System
+source $DOTFILES/system/env.zsh
+
+# ZSH
+source $DOTFILES/zsh/aliases.zsh
+
+# Homebrew
+source $DOTFILES/homebrew/path.zsh
+
+# nvm
+source $DOTFILES/nvm/init.zsh
+
+# Autocomplete
+source $DOTFILES/zsh/completion.zsh
+source $DOTFILES/git/completion.zsh
+
