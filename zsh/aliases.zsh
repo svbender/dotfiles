@@ -18,3 +18,7 @@ alias cnt="find ./ -type f | wc -l"
 function mkcd() {
     mkdir $1 && cd $1
 }
+
+# Jetbrains (Binaries are already available if toolbox is used.)
+alias ws="webstorm ./"
+alias ps="phpstorm ./"

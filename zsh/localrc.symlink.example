@@ -1,2 +1,5 @@
 # Private environment variables
 export $PROJECT_HOME=$HOME/my/folder
+
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"

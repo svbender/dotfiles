@@ -36,9 +36,6 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
 
-# load .localrc (contains environment variables to use)
-source $HOME/.localrc
-
 # dotfiles includes
 # Git
 source $DOTFILES/git/aliases.zsh
