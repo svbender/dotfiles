@@ -40,4 +40,7 @@ defaults write com.apple.Safari WebKitDeveloperExtrasEnabledPreferenceKey -bool 
 defaults write com.apple.Safari "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
+# Show always hidden files in finder
+defaults write http://com.apple.Finder AppleShowAllFiles true
+
 echo "macos/set-set-defaults finished."

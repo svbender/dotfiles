@@ -15,7 +15,12 @@ alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias ga='git add .'
 alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
+alias gdd='git log --name-status -10 ./' # git directory difference
 
 # Gerrit
 alias gpg='git push origin HEAD:refs/for/master'
-alias gpbg='git push origin HEAD:refs/for/$1'
+alias gpgb='git push origin HEAD:refs/for/$1'
+
+# gh Copilot CLI
+alias ghcs='gh copilot suggest $1'
+alias ghce='gh copilot explain $1'
