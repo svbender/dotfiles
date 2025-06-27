@@ -40,6 +40,11 @@ defaults write com.apple.Safari.plist WebKitDeveloperExtrasEnabledPreferenceKey 
 defaults write com.apple.Safari.plist "com.apple.Safari.ContentPageGroupIdentifier.WebKit2DeveloperExtrasEnabled" -bool true
 
 # Show always hidden files in finder
-defaults write http://com.apple.Finder AppleShowAllFiles true
+#defaults write http://com.apple.Finder AppleShowAllFiles true
+defaults write com.apple.finder AppleShowAllFiles true
+killall Finder
+
+# Use F-Keys as default instead of function (fn) keys
+defaults write com.apple.keyboard.fnState -bool false
 
 echo "macos/set-set-defaults finished."
