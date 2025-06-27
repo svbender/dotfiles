@@ -40,6 +40,10 @@ done
 
 export DOTFILES=$HOME/.dotfiles
 
+# Update dotfiles themselves
+echo "› git pull"
+git -C $DOTFILES pull
+
 # Set macOS defaults
 $DOTFILES/macos/set-defaults.sh
 
@@ -49,6 +53,9 @@ $DOTFILES/homebrew/install.sh 2>&1
 # Upgrade homebrew
 echo "› brew update"
 brew update
+
+echo "› brew upgrade"
+brew upgrade
 
 # Install software
 echo "› $DOTFILES/script/install"
